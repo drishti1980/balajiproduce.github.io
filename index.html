@@ -12,35 +12,54 @@
       background: url('background image.jpg') no-repeat center center fixed;
       background-size: cover;
       color: #fff;
-      text-align: center;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
+      text-align: center;
     }
-    .container {
-      background-color: rgba(0, 0, 0, 0.6);
-      margin: 50px auto;
-      padding: 30px;
-      border-radius: 15px;
-      width: 90%;
-      max-width: 500px;
+    .header {
+      margin-bottom: 20px;
     }
-    h1 {
-      font-size: 36px;
+    .logo {
+      width: 100px;
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
       margin-bottom: 10px;
     }
-    h2 {
+    .gradient-text {
+      font-size: 36px;
+      font-weight: bold;
+      background: linear-gradient(to right, #56ab2f, #a8e063);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
       margin: 0;
-      font-size: 22px;
+    }
+    .container {
+      background-color: rgba(0, 0, 0, 0.65);
+      padding: 30px;
+      border-radius: 20px;
+      width: 90%;
+      max-width: 500px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+    h2 {
+      margin: 5px 0 20px;
+      font-size: 20px;
       font-weight: normal;
+      color: #eee;
+    }
+    p {
+      margin: 10px 0;
+      font-size: 16px;
     }
     button {
       background: linear-gradient(to right, #56ab2f, #a8e063);
       border: none;
       color: white;
       padding: 12px 25px;
-      margin: 10px;
+      margin: 10px 5px;
       font-size: 16px;
       border-radius: 8px;
       cursor: pointer;
@@ -49,20 +68,14 @@
     button:hover {
       background: linear-gradient(to right, #a8e063, #56ab2f);
     }
-    img {
-      width: 160px;
-      margin-bottom: 20px;
-    }
-    .note {
-      font-size: 13px;
-      margin-top: 25px;
-      color: #ddd;
-    }
   </style>
 </head>
 <body>
+  <div class="header">
+    <img src="qr_with_logo.png" alt="QR Code" class="logo">
+    <h1 class="gradient-text">Balaji Produce</h1>
+  </div>
   <div class="container">
-    <h1>Balaji Produce</h1>
     <h2>Ambica Kothakapu</h2>
     <p><strong>📞</strong> +1 (780)-257-4616</p>
     <p><strong>📧</strong> balajiproduce@outlook.com</p>
@@ -70,7 +83,6 @@
     <a href="tel:+17802574616"><button>📞 Call</button></a>
     <a href="mailto:balajiproduce@outlook.com"><button>✉️ Email</button></a>
     <a href="ambica.vcf" download><button>💾 Add to Contacts</button></a>
-    <!-- p class="note">⚠️ If any button doesn’t work, please open in Chrome or Safari browser /p -->
   </div>
 </body>
 </html>
